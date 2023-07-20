@@ -45,6 +45,7 @@ python script_regex.py
 --------------------------------------------------------------------------------------
 
 ### Script substituição
+###### !Atenção! se não quiser usar o escape na aspas duplas da regex, passe ela dentro de aspas simples
 
 # Dependência
 ~~~sh
@@ -60,6 +61,16 @@ python script_substituicao.py "\".*\"" "\"TT\"" exemplo_codigo_para_ser_buscado.
 # Execução
 ~~~sh
  python script_substituicao.py "(\".*\")" "\1.i18n()" exemplo_codigo_para_ser_buscado.cs
+~~~
+
+### Execução eliminando alguns formatos de data
+~~~sh
+ python script_substituicao.py '".?.?/?../....*"' '' teste/lista_strings_encontradas.txt
+~~~
+
+### Execução eliminando alguns formatos tipo "{0:n4}"
+~~~sh
+python script_substituicao.py '"[\{.*\}].*"' '' teste/lista_strings_encontradas.txt
 ~~~
 
 

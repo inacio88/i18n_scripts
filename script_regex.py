@@ -23,9 +23,9 @@ def encontrar_palavras_por_regex(regex, caminho_arquivo_entrada, caminho_arquivo
 # Exemplo de uso
 
 #regex = r'".*"'  # Padrão que corresponde a todas as palavras em uma string
-regex = r'"(.*)"(?!.i18n)'  # Padrão que corresponde a todas as palavras em uma string
+regex = r'"(.*?)"(?!.i18n)'  # Padrão que corresponde a todas as palavras em uma string
 
-arquivo_entrada = "teste/BillingCalculationForm.cs"  # Substitua pelo caminho correto do arquivo de entrada
+arquivo_entrada = "exemplo_codigo_para_ser_buscado.cs"  # Substitua pelo caminho correto do arquivo de entrada
 arquivo_saida = "teste/lista_strings_encontradas.txt"  # Substitua pelo caminho desejado para o arquivo de saída
 
 encontrar_palavras_por_regex(regex, arquivo_entrada, arquivo_saida)
