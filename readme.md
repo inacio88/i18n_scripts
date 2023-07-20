@@ -39,3 +39,25 @@ python script_i18n.py
 ~~~sh
 python script_regex.py
 ~~~
+
+
+
+--------------------------------------------------------------------------------------
+
+### Script substituição
+
+# Dependência
+~~~sh
+pip install argparse
+~~~
+
+# Execução
+~~~sh
+python script_substituicao.py "\".*\"" "\"TT\"" exemplo_codigo_para_ser_buscado.cs
+~~~
+
+
+# Execução
+~~~sh
+ python script_substituicao.py "(\".*\")" "\1.i18n()" exemplo_codigo_para_ser_buscado.cs
+~~~

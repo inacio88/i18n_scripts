@@ -6,16 +6,16 @@ namespace HelloWorld
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
-      var oi = "arroz";
-      var o2i = "inacio";
-      var ois = "arroz e ase ";    
-      var oifes = "arroz ase { sdf }";    
-      var oei = "{arroz}";    
-      var ogi = "arr {}oz";    
-      var obi = "(arroz)";    
-      var oie = "a21rroz";    
-      var oie = "oz";    
+      Console.WriteLine("TT".i18n());
+      var oi = "TT".i18n();
+      var o2i = "TT".i18n();
+      var ois = "TT".i18n();    
+      var oifes = "TT".i18n();    
+      var oei = "TT".i18n();    
+      var ogi = "TT".i18n();    
+      var obi = "TT".i18n();    
+      var oie = "TT".i18n();    
+      var oie = "TT".i18n();    
 
     }
   }
