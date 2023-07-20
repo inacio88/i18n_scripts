@@ -31,3 +31,11 @@ pip install elementpath
 python script_i18n.py
 ~~~
 
+--------------------------------------------------------------------------------------
+
+### Script regex
+
+# Execução
+~~~sh
+python script_regex.py
+~~~
