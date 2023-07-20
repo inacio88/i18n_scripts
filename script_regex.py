@@ -12,7 +12,7 @@ def encontrar_palavras_por_regex(regex, caminho_arquivo_entrada, caminho_arquivo
         # Escrever as palavras encontradas em um arquivo de saída
         with open(caminho_arquivo_saida, 'w') as arquivo_saida:
             for palavra in palavras_encontradas:
-                arquivo_saida.write(palavra + '\n')
+                arquivo_saida.write('"' + palavra + '"' + '\n')
 
         print(f"Palavras encontradas pela regex '{regex}' foram salvas no arquivo '{caminho_arquivo_saida}'.")
     except FileNotFoundError:
@@ -21,8 +21,11 @@ def encontrar_palavras_por_regex(regex, caminho_arquivo_entrada, caminho_arquivo
         print(f"Ocorreu um erro: {e}")
 
 # Exemplo de uso
-regex = r'".*"'  # Padrão que corresponde a todas as palavras em uma string
-arquivo_entrada = "exemplo_codigo_para_ser_buscado.cs"  # Substitua pelo caminho correto do arquivo de entrada
-arquivo_saida = "lista_palavras_encontradas_saida.txt"  # Substitua pelo caminho desejado para o arquivo de saída
+
+#regex = r'".*"'  # Padrão que corresponde a todas as palavras em uma string
+regex = r'"(.*)"(?!.i18n)'  # Padrão que corresponde a todas as palavras em uma string
+
+arquivo_entrada = "teste/BillingCalculationForm.cs"  # Substitua pelo caminho correto do arquivo de entrada
+arquivo_saida = "teste/lista_strings_encontradas.txt"  # Substitua pelo caminho desejado para o arquivo de saída
 
 encontrar_palavras_por_regex(regex, arquivo_entrada, arquivo_saida)

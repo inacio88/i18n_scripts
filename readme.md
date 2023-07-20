@@ -61,3 +61,21 @@ python script_substituicao.py "\".*\"" "\"TT\"" exemplo_codigo_para_ser_buscado.
 ~~~sh
  python script_substituicao.py "(\".*\")" "\1.i18n()" exemplo_codigo_para_ser_buscado.cs
 ~~~
+
+
+------------------------------------------------------------------------
+###### Exemplos de regex úteis
+- Negação de algo do tipo "{0:n4}"
+~~~sh
+"[^\{.*\}].*"
+~~~
+
+- Formato data
+~~~sh
+".?.?/?../....*"
+~~~
+
+- Pegar mais de uma string numa mesma linha
+~~~sh
+".*?"
+~~~
