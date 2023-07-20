@@ -20,6 +20,9 @@ namespace HelloWorld
       var oie = "Deseja realizar o cancelamento na data do documento?";    
       var oie = "Não foi possível realizar 7a liberação de alguns registros:\n";
 
+      var oie2 = "Não foi possível realizar 7a liberação de alguns registros:\n".i18n();
+
+
     oioi("Primeiro texto", "Segundo texto");
 
     }

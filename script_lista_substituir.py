@@ -36,7 +36,7 @@ if __name__ == "__main__":
     linhas = read_file_to_array_sem_linha_vazia(entrada_lista_strings)
 
 
-    saida_arquivo_onde_tera_substituicao = "teste/lista_saida.txt"  # Substitua pelo caminho do arquivo desejado
+    saida_arquivo_onde_tera_substituicao = "exemplo_final.cs"  # Substitua pelo caminho do arquivo desejado
 
 
     for sentenca in linhas:
