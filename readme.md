@@ -4,7 +4,7 @@
 
  #### Passo a passo do diagrama
 
-![alt text](https://github.com/inacio88/i18n_scripts/blob/main/img/fluxugrama.jpg?raw=true)
+![alt text](https://github.com/inacio88/i18n_scripts/blob/main/diagrama/fluxugrama.jpg?raw=true)
 
 
 ~~~sh
