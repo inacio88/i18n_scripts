@@ -3,6 +3,10 @@
  lorem3
 
  #### Passo a passo do diagrama
+
+![alt text](https://github.com/inacio88/i18n_scripts/blob/main/img/fluxugrama.jpg?raw=true)
+
+
 ~~~sh
 ~~~
 
@@ -64,6 +68,27 @@ var oie2 = "Não foi possível realizar 7a liberação de alguns registros:\n".i
 - Confira no seu arquivo onde ocorrem as substituições para vê se deu tudo certo.
 
 
+
+ #### Nessa parte vamos executar os scripts para add chave e valor no xml resx
+~~~sh
+python script_xml_ingles_add.py
+python script_xml_portugues_add.py
+~~~
+
+###### Repare que aqui foi definido duas coisas importantes dentro do script
+~~~python
+entrada_lista_strings = "teste/lista_strings_encontradas.txt"
+caminho_arquivo_resx = "exemplo_recurso_ingles.resx"
+~~~
+
+
+###### !ATENCÃO!
+- Perceba que quebra de linhas geradas pelo script ainda não é a ideal, por tanto, é necessário conferir manualmente. Apenas de todas as tags abrirem e fecharem corretamente.
+~~~xml
+</value></data><data name="Primeiro texto" xml:space="preserve"><value>Primeiro texto
+</value></data><data name="Segundo texto" xml:space="preserve"><value>Segundo texto
+</value></data></root>
+~~~
 
 ## Para executar
 
