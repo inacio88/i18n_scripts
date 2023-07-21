@@ -18,7 +18,7 @@ def adicionar_valor_resx(caminho_arquivo, chave, valor):
         novo_elemento.set("xml:space", "preserve")
 
         valor_elemento = ET.SubElement(novo_elemento, "value")
-        valor_elemento.text = valor
+        valor_elemento.text = valor + "\n"
 
         # Adicionar o novo elemento ao root
         root.append(novo_elemento)
@@ -30,9 +30,28 @@ def adicionar_valor_resx(caminho_arquivo, chave, valor):
     except Exception as e:
         print(f"Erro ao adicionar a chave '{chave}': {e}")
 
-# Exemplo de uso
-caminho_arquivo_resx = "exemplo_recurso.resx"
-chave = "laranfja"
-valor = "orangef"
+def read_file_to_array_sem_linha_vazia(filepath):
+    lines_array = []
+    try:
+        with open(filepath, 'r') as file:
+            for line in file:
+                line = line.strip()  # Remover espaços em branco e quebras de linha no início e no final
+                if line:
+                    lines_array.append(line)
+    except FileNotFoundError:
+        print(f"Error: File not found - {filepath}")
 
-adicionar_valor_resx(caminho_arquivo_resx, chave, valor)
+    return lines_array
+
+if __name__ == "__main__":
+
+    entrada_lista_strings = "teste/lista_strings_encontradas.txt"  # Substitua pelo caminho do arquivo desejado
+    linhas = read_file_to_array_sem_linha_vazia(entrada_lista_strings)
+
+    # Exemplo de uso
+    caminho_arquivo_resx = "exemplo_recurso.resx"
+    
+    for sentenca in linhas:
+        chave = sentenca.replace('"','')
+        valor = sentenca.replace('"','')
+        adicionar_valor_resx(caminho_arquivo_resx, chave, valor)

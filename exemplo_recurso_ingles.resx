@@ -68,11 +68,10 @@
   <data name="Vermelho" xml:space="preserve">
     <value>Red</value>
   </data>
-<data name="Faturar/Cancelar" xml:space="preserve"><value>Faturar/Cancelar
-</value></data><data name="Selecione os itens que deseja liberar." xml:space="preserve"><value>Selecione os itens que deseja liberar.
-</value></data><data name="Deseja cancelar os registros selecionados?" xml:space="preserve"><value>Deseja cancelar os registros selecionados?
-</value></data><data name="Deseja realizar o cancelamento na data do documento?" xml:space="preserve"><value>Deseja realizar o cancelamento na data do documento?
-</value></data><data name="Não foi possível realizar 7a liberação de alguns registros:\n" xml:space="preserve"><value>Não foi possível realizar 7a liberação de alguns registros:\n
-</value></data><data name="Primeiro texto" xml:space="preserve"><value>Primeiro texto
-</value></data><data name="Segundo texto" xml:space="preserve"><value>Segundo texto
+  <data name="Faturar/Cancelar" xml:space="preserve"><value>Inform/cancel
+</value></data><data name="Selecione os itens que deseja liberar." xml:space="preserve"><value>Select the items you want to release.
+</value></data><data name="Deseja cancelar os registros selecionados?" xml:space="preserve"><value>Do you want to cancel selected records?
+</value></data><data name="Deseja realizar o cancelamento na data do documento?" xml:space="preserve"><value>Do you want to cancel the date of the document?
+</value></data><data name="Não foi possível realizar 7a liberação de alguns registros:\n" xml:space="preserve"><value>It was not possible to perform 7th release of some records: \ n
+</value></data><data name="Primeiro texto" xml:space="preserve"><value>First text
 </value></data></root>

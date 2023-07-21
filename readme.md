@@ -47,7 +47,7 @@ python script_substituicao.py '"[\{.*\}].*"' '' teste/lista_strings_encontradas.
 ~~~sh
 python script_lista_substituir.py
 ~~~
-###### Repare que aqui foi definido três coisas importantes dentro do script
+###### Repare que aqui foi definido duas coisas importantes dentro do script
 ~~~python
 entrada_lista_strings = "teste/lista_strings_encontradas.txt"  
 saida_arquivo_onde_tera_substituicao = "exemplo_final.cs"
@@ -135,6 +135,22 @@ python script_substituicao.py "\".*\"" "\"TT\"" exemplo_codigo_para_ser_buscado.
 ~~~sh
 python script_substituicao.py '"[\{.*\}].*"' '' teste/lista_strings_encontradas.txt
 ~~~
+
+--------------------------------------------------------------------------------------
+
+### Script add xml
+###### !Atenção! se não quiser usar o escape na aspas duplas da regex, passe ela dentro de aspas simples
+
+# Dependência
+~~~sh
+pip install googletrans==4.0.0-rc1
+~~~
+
+# Execução
+~~~sh
+python script_xml_portugues_add.py
+~~~
+
 
 
 ------------------------------------------------------------------------
