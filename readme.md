@@ -116,6 +116,12 @@ virtualenv ambiente_script
 ~~~sh
 source ambiente_script/bin/activate
 ~~~
+# Dependências dos scripts
+~~~sh
+pip install elementpath
+pip install argparse
+pip install googletrans==4.0.0-rc1
+~~~
 
 # Ativando o ambiente NO WINDOWS acho que é assim no powershell confirmar depois
 ~~~sh
