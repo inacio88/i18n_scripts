@@ -90,7 +90,20 @@ caminho_arquivo_resx = "exemplo_recurso_ingles.resx"
 </value></data></root>
 ~~~
 
-## Para executar
+##### Script do designer
+~~~sh
+python script_designer.py
+~~~
+###### Repare que aqui foi definido três coisas importantes dentro do script
+- Como aqui estamos interessados em dois elementos da linha, tem dois grupos delineados.
+- No arquivo de saída terá o nome do elemento + metodo, e mais embaixo as strings.
+~~~python
+regex = r'this\.(.*)\.Text\s=\s(".*");' 
+arquivo_entrada = "designer_exemplo.cs"
+arquivo_saida = "teste/saida_designer.txt"
+~~~
+
+## Para executar todos esses scripts
 
 - Aqui será num ambiente python virtual
 

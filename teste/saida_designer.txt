@@ -1,0 +1,13 @@
+Lbl_Nome.SetText()
+Lbl_Email.SetText()
+Lbl_Cpf.SetText()
+Lbl_Data_Nasc.SetText()
+Btn_Salvar.SetText()
+
+
+
+"Nome"
+"Email"
+"CPF"
+"Data Nascimento"
+"Salvar"
