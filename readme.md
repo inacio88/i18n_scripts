@@ -1,6 +1,10 @@
 ### Script i18n
 #### Descrição
- lorem3
+- 4 processos serão feitos aqui, os 3 primeiros estão desenhados abaixo.
+- 1° Geração da lista de strings.
+- 2° A partir da lista gerada, fazer a substuição de cada string sem i18n com o métodos adicionado.
+- 3° A partir da lista gerada, adcioná-las no .resx em inglês e português.
+- 4° Pegar o nome dos elementos de um formulário e jogar num arquivo de saída nome + .SetText, e mais abaixo ainda no mesmo arquivo de saída as respctivas strings para serem utilizadas no processo n°3.
 
  #### Passo a passo do diagrama
 
