@@ -106,7 +106,13 @@ regex = r'this\.(.*)\.Text\s=\s(".*");'
 arquivo_entrada = "designer_exemplo.cs"
 arquivo_saida = "teste/saida_designer.txt"
 ~~~
-
+- Formatação
+~~~sh
+python script_substituicao.py '("preserve">)(<value>.*)' '\1\n\t\2' exemplo_recurso.resx;
+python script_substituicao.py '(</value>)(</data>)' '\1\n\2' exemplo_recurso.resx;
+python script_substituicao.py '(<value>)(.*)\n(</value>)' '\1\2\3' exemplo_recurso.resx;
+python script_substituicao.py '(</data>)(<data.*)' '\1\n\2' exemplo_recurso.resx
+~~~
 ## Para executar todos esses scripts
 
 - Aqui será num ambiente python virtual
