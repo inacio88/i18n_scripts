@@ -1,0 +1,1 @@
+sed -r 's/(.*)=(.*)/\1/g' i18nCompleto > editado ; paste -d '=' editado listaTrazuida > novoI18n
